@@ -81,10 +81,143 @@ span {
 /* modal */
 
 .modal1 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  transition: 0.5s;
+}
+
+.modal h4 {
+  padding-top: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.form {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 0 10% auto;
+  
+}
+
+  .form input {
+    border: solid 1px whitesmoke;
+    position: relative;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    width: 350px;
+    height: 25px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #2E2F42;
+    margin-top: 10px;
+  }
+  
+  .form span {
+    font-family: sans-serif;
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.9s;
+    margin-top: 10px;
+  }
+  
+  .form input:valid ~ span,
+  .form input:focus ~ span
+  {
+    color: #4bddf7;
+    transform: translateX(350px) translateY(-7px);
+    font-size: 0.90em;
+    padding: 0 10px;
+    background: none;
+    
+
+  }
+ .form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  }
+
+  .form1 input {
+    color: whitesmoke;
+    font-size: 1em;
+    position: relative;
+    height: 200px;
+    margin-top: 25px;
+    border: solid 1px whitesmoke;
+    background-color: #2E2F42;
+    width: 350px;
+  }
+  .form1 span {
+    font-family: sans-serif;
+    position: absolute;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.9s;
+  }
+
+  .form1 input:valid ~ span,
+  .form1 input:focus ~ span
+    {
+    top: 50%;
+    color: #4bddf7;
+    transform: translateX(130px) translateY(-75px);
+    font-size: 0.90em;
+    padding: 0 10px;
+    background: none;
+    }
+
+    .form2 {
+      display: flex;
+      flex-direction: column;
+      text-align: center; 
+      justify-content: center; 
+      margin: 0 10% auto; 
+      align-items: center; 
+    }
+    .form2 p {
+      margin-top: 55px;
+      text-align: center;
+      margin-right: 40px;
+    }
+
+    .form2 input {
+      position: absolute;
+      top: 65%;
+      width: 20px;
+      height: 20px;
+      
+    }
+    .but {
+    width: 75px;
+    display: inline-flex;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    }
+
+
+.but:hover {
+  background: transparent;
+  color: #4bddf7;
 }
 
 .modal  {
@@ -95,9 +228,9 @@ span {
   top: 0;
   transform: translate(-50%, -50%) scale(0.1);
   border-radius: 25px;
-  height: 620px;
-  width: 370px;
-  background: whitesmoke;
+  height: 650px;
+  width: 470px;
+  background: #2E2F42;
   box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   visibility: hidden;
   transition: tranform 0.4s, top 0.4s;
@@ -443,17 +576,42 @@ p {
 }
 
 .label input {
-  font-size: 15px;
+  border: solid 2px whitesmoke;
+  position: relative;
+  font-size: 1em;
   font-family: sans-serif;
   color: whitesmoke;
   width: 225px;
   height: 30px;
-  flex-shrink: 0;
-  border-radius: 4px;
+  outline: none;
+  border-radius: 8px;
   background-color: #2E2F42;
-  border: 3px solid var(--WHITE, #FFF);
-  box-shadow: 2px 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
+
+.label span {
+  font-family: sans-serif;
+  position: absolute;
+  left: 61%;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.label input:valid ~ span,
+.label input:focus ~ span
+{
+  color: #4bddf7;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.90em;
+  padding: 0 10px;
+  background: #2E2F42;
+  border-left: 2px solid #4bddf7;
+  border-right: 2px solid #4bddf7;
+}
+
 
 .button {
   width: 150px;
@@ -465,7 +623,13 @@ p {
   font-family: sans-serif;
   font-size: 15px;
   cursor: pointer;
+  border-radius: 8px;
   gap: 20%;
+}
+
+.button:hover {
+  background: transparent;
+  color: #4bddf7;
 }
 .button i  {
   color: whitesmoke;
