@@ -354,6 +354,12 @@ p {
   cursor: pointer;
   gap: 20%;
 }
+
+.button:hover {
+  background: transparent;
+  color: #4bddf7;
+}
+
 .button i  {
   color: whitesmoke;
 }
