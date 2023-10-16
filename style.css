@@ -436,13 +436,13 @@ p {
   letter-spacing: 0.32px;
 
 }
-.form {
+.label {
   justify-content: center;
   align-items: center; 
   text-align: left;
 }
 
-.form input {
+.label input {
   font-size: 15px;
   font-family: sans-serif;
   color: whitesmoke;
